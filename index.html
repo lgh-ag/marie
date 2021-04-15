@@ -69,7 +69,6 @@
       var currentDate = Date.now();
 
       var milli = ferienDate - currentDate;
-
       var abgezogen = 0;
 
       var wochen = Math.floor(milli / 1000 / 60 / 60 / 24 / 7);
@@ -92,10 +91,8 @@
       console.log(sekunden);
 
       console.log("-----------------------------------");
+      
       document.getElementById("feriencounter").innerText = "Das sind : " + wochen + " Wochen, " + tage + " Tage, " + stunden + " Stunden, " + minuten + " Minuten, " + sekunden + " Sekunden, "
-
-
-     //document.getElementById("feriencounter").innerText = wochen
      setTimeout(getSeconds, 1000);
     }
     
